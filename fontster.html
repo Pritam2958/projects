@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width: device-width; initial-scale: 1;">
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#2fa">
+  <title>Fonster</title>
+</head>
+<script src="prism.js"></script>
+<link rel="stylesheet" href="prism.css">
+<link rel="shortcut icon" href="fontster.jpg" type="image/x-icon" />
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="stylesheet" href="https://pritam2958.github.io/assets/docs/fontster.css">
+<body>
+  <ul>
+    <img src="fontster.jpg">
+    <h1 align="center">Fonster.css</h1>
+    <a href="https://www.codefactor.io/repository/github/pritam2958/pritam2958.github.io/overview/main"><img id="codefactor" src="https://www.codefactor.io/repository/github/pritam2958/pritam2958.github.io/badge/main" alt="CodeFactor" /></a>
+    <li><h5>What is Fontster.css ?</h5></li>
+    <p>
+      Fonster is a css stylesheet with many kinds of google fonts , all in the code. while all of them are from google fonts , still it is useful as it contains all kinds of fonts together.
+    </p>
+    <li><h5>How does it work ?</h5></li>
+    <p>
+      Here is a small paragraph -
+    </p>
+    <p id="lorem">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eveniet laudantium nostrum explicabo quisquam alias, tempore ipsam reprehenderit non minima odio illo iste ullam quibusdam quaerat accusantium, fugiat, sit commodi.
+    </p>
+    <h5>Now click on these buttons -</h5>
+    <button style="background-color: red;" onclick="func1()"></button>
+    <button style="background-color: green;" onclick="func2()"></button>
+    <button style="background-color: black;" onclick="func3()"></button>
+    <br />
+  <li><h5>The code behind:</h5></li>
+  <div class="code">
+  <pre>
+    <code class="language-css">
+      /*in html , the buttons are assigned with functions - func1 , func2 , func3
+      jquery used
+
+      css*/
+      button {
+      height: 40px;
+      width: 40px;
+      border-radius: 100px;
+      }
+       </code> </pre>
+       <pre>
+         <code class="language-javascript">
+      //js
+      function func1 () {
+      $("#lorem").css({"fontFamily":"VT323, monospace"});
+      }
+      function func2 () {
+      $("#lorem").css({"fontFamily":"Patrick Hand, cursive"});
+      }
+      function func3 () {
+      $("#lorem").css({"fontFamily":"Lavishly Yours, cursive"});
+      }
+    </code>
+  </pre>
+  </div>
+  <p>
+    see, no extra link tags or @import tags used.
+  </p>
+  <li><h5>How to use ?</h5></li>
+  <p>
+    to use fontster.css , copy this-
+  </p>
+  <div class="code">
+  <pre>
+    <code id="link" class="language-html"></code>
+  </pre>
+  </div>
+  <li><h5>Fonts available:</h5></li>
+  <p>
+    to see what fonts you can use go to <a href="https://pritam2958.github.io/assets/docs/font-families.html">Here</a>
+  </p>
+  <li><h5>Download the CSS File</h5></li>
+  <p>
+    to download the file click <a href="https://pritam2958.github.io/assets/docs/fontster.css" download id="download">here</a>
+  </p>
+</ul>
+<a id="proper" href="https://github.com/Pritam2958"><p>&copy;Pritam2958</p></a>
+</body>
+<style>
+#proper {
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#codefactor {
+  width: 10em;
+  height: 25px;
+}
+#download {
+  font-family: 'Rubik Burned';
+  border: 3px double crimson;
+  border-radius: 10px;
+  color: #8B0000;
+  background-color: #48D1CC;
+}
+img {
+  height: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5em;
+  border-radius: 10px;
+}
+h5 {
+  color: #2fa;
+}
+a {
+font-family: 'Great Vibes', cursive;
+}
+ul {
+list-style: "→" outside none;
+padding: 30px;
+}
+body {
+background-color: rgb(30, 144, 255);
+font-family: 'Josefin Sans', sans-serif;
+}
+#lorem {
+background-color: rgb(205, 92, 92);
+color: white;
+font-family: sans-serif;
+}
+button {
+height: 50px;
+width: 50px;
+border-radius: 100px;
+}
+#link {
+padding: 10px;
+}
+#copy {
+  height: 1em;
+  width: 1em;
+  border-radius: 100%;
+}
+</style>
+<script>
+function func1 () {
+$("#lorem").css({
+"fontFamily": "VT323, monospace"
+});
+}
+function func2 () {
+$("#lorem").css({
+"fontFamily": "Patrick Hand, cursive"
+});
+}
+
+function func3 () {
+$("#lorem").css({
+"fontFamily": "Lavishly Yours, cursive",
+"letterSpacing": ".1em"
+});
+}
+
+$("#link").text("<link rel=\"stylesheet\" href=\"https://pritam2958.github.io/cdn/fontster.css\">");
+</script>

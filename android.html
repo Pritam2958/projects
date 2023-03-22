@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Android version </title>
+        <link rel="stylesheet" href="https://pritam2958.github.io/cdn/fontster.css">
+    </head>
+    <body>
+        <p id="demo">Click the button to below to know the android version</p>
+        <button onclick="myFunction()"><span >Click</span></button>
+    </body>
+</html>
+<style>
+body {
+    background-color:#0ff00f;
+    font-family:'Patrick Hand', cursive;
+    font-weight:bold;
+    font-size:30px;
+}
+.btn {
+    font-family:cursive;
+    font-weight:bold;
+    font-size:30px;
+}
+</style>
+<script>
+var ua = navigator.userAgent;
+if( ua.indexOf("Android") >= 0 ) {
+var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8)); 
+if (androidversion < 2.3) {
+ alert("Your Android Version is OutDated")
+}
+function myFunction() {
+var x="Android Version:" + androidversion;
+alert ("Android Version is:"+androidversion )
+document.getElementById("demo").innerHTML = x;
+}
+}
+</script>
